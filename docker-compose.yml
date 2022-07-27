@@ -13,8 +13,6 @@ services:
       - 8001:8002
     volumes:
       - ./backend/.env:/usr/src/app/backend/.env
-    depends_on:
-      - mysqldb
     networks:
       - localwhat
   front:
