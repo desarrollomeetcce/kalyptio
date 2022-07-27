@@ -10,8 +10,6 @@ services:
     container_name: shoppingcart-back
     ports:
       - 8001:8002
-    volumes:
-      - ./backend/.env:/usr/src/app/backend/.env
     networks:
       - localwhat
   front:
@@ -23,8 +21,6 @@ services:
     container_name: shoppingcart-front
     ports:
       - 3000:8080
-    volumes:
-      - ./frontend/.env:/usr/src/app/frontend/.env
     networks:
       - localwhat
 networks:
