@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 
 ADD . /usr/src/app/
 
+EXPOSE 8001
 
 WORKDIR /usr/src/app/backend
 
