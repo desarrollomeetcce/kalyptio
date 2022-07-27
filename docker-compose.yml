@@ -8,7 +8,6 @@ services:
       dockerfile: ./backend/Dockerfile
     image: shoppingcart-back
     container_name: shoppingcart-back
-    restart: always
     ports:
       - 8001:8002
     volumes:
