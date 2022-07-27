@@ -12,7 +12,7 @@ services:
     ports:
       - 8001:8002
     volumes:
-      - ./backend/.env:/usr/src/app/.env
+      - ./backend/.env:/usr/src/app/backend/.env
     depends_on:
       - mysqldb
     networks:
@@ -27,7 +27,7 @@ services:
     ports:
       - 3000:8080
     volumes:
-      - ./frontend/.env:/usr/src/app/.env
+      - ./frontend/.env:/usr/src/app/frontend/.env
     networks:
       - localwhat
 networks:
