@@ -12,3 +12,5 @@ RUN pwd
 RUN ls
 RUN npm install
 
+CMD ["npm", "start"]
+
