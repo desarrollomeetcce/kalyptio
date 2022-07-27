@@ -29,3 +29,4 @@ services:
       - localwhat
 networks:
   localwhat:
+    external: true
