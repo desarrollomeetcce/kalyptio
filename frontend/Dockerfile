@@ -9,6 +9,8 @@ RUN mkdir -p /usr/src/app/frontend
 ADD . /usr/src/app/frontend
 
 WORKDIR /usr/src/app/frontend
+
+RUN apt-get update
 RUN npm install
 RUN npm run build 
 RUN npm install -g serve
