@@ -1,0 +1,39 @@
+{
+    "dataValues": [
+        {
+            "code": "PEN",
+            "name": "Kalyptio PEN",
+            "price": 5,
+            "stock": 10,
+            "img": "https://m.media-amazon.com/images/I/711F6-eLS6L._AC_SY355_.jpg",
+            "promo":[
+                {"kind": "X", "amount":2,"disocunt": 1, "percent": 0}
+            ] 
+        },
+        {
+            "code": "TSHIRT",
+            "name": "Kalyptio T-shirt",
+            "price": 20,
+            "stock": 10,
+            "img": "https://dictionary.cambridge.org/es/images/thumb/Tshirt_noun_001_18267.jpg?version=5.0.247",
+            "promo":[
+                {"kind": "D", "amount":3,"disocunt": 0, "percent": 25}
+            ] 
+        },
+        {
+            "code": "MUG",
+            "name": "Kalyptio Coffe Mug",
+            "price": 7.5,
+            "stock": 10,
+            "img": "https://http2.mlstatic.com/D_NQ_NP_671781-MLM47759975602_102021-O.webp"
+        },
+        {
+            "code": "TEST2",
+            "name": "Producto de prueba",
+            "price": 7,
+            "stock": 10,
+            "img": "https://m.media-amazon.com/images/I/711F6-eLS6L._AC_SY355_.jpg",
+            "id": "7e6c684e-3502-b7e9-5dd1-d45e0c0776ca"
+        }
+    ]
+}
