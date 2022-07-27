@@ -15,7 +15,7 @@ services:
     networks:
       - localwhat
   front:
-   env_file:
+    env_file:
     -  ./frontend/.env 
     build:
       context: .
