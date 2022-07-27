@@ -1,0 +1,34 @@
+version: '1.0'
+
+services: 
+
+  back:      
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    image: shoppingcart-back
+    container_name: shoppingcart-back
+    restart: always
+    ports:
+      - $PORT:$PORT
+    volumes:
+      - ./backend/.env:/usr/src/app/backend/.env
+    depends_on:
+      - mysqldb
+    networks:
+      - localwhat
+  front:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    image: shoppingcart-front
+    stdin_open: true
+    container_name: shoppingcart-front
+    ports:
+      - 3333:3000
+    volumes:
+      - ./frontend/.env:/usr/src/app/frontend/.env
+    networks:
+      - localwhat
+networks:
+  localwhat:
