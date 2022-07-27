@@ -14,6 +14,4 @@ RUN apt-get update
 RUN npm install
 RUN pwd
 RUN ls
-RUN npm run build 
-RUN npm install -g serve
-CMD ["serve","-s", "build"]
+CMD ["npm", "start"]
