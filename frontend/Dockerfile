@@ -12,6 +12,8 @@ WORKDIR /usr/src/app/frontend
 
 RUN apt-get update
 RUN npm install
+RUN pwd
+RUN dir
 RUN npm run build 
 RUN npm install -g serve
 CMD ["serve","-s", "build"]
