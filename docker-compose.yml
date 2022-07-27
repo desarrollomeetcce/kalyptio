@@ -2,7 +2,9 @@ version: '1.0'
 
 services: 
 
-  back:      
+  back:    
+    env_file:
+    -  ./backend/.env  
     build:
       context: .
       dockerfile: ./backend/Dockerfile
@@ -13,6 +15,8 @@ services:
     networks:
       - localwhat
   front:
+   env_file:
+    -  ./frontend/.env 
     build:
       context: .
       dockerfile: ./frontend/Dockerfile
