@@ -11,7 +11,7 @@ services:
     image: shoppingcart-back
     container_name: shoppingcart-back
     ports:
-      - 8001:8002
+      - 8002:8001
     networks:
       - localwhat
   front:
@@ -24,7 +24,7 @@ services:
     stdin_open: true
     container_name: shoppingcart-front
     ports:
-      - 3000:8080
+      - 8080:3080
     networks:
       - localwhat
 networks:
