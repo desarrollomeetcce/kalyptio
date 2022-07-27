@@ -57,7 +57,7 @@ const server = http.createServer(app);
 /**
  * Inicia el servidor
  */
-server.listen(port);
+server.listen(port,'0.0.0.0');
 
 console.log(`Servidor iniciado en el puerto ${process.env.PORT}`);
 
