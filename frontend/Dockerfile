@@ -7,7 +7,6 @@ WORKDIR /usr/src/app
 ADD . /usr/src/app/
 
 WORKDIR /usr/src/app/frontend
-COPY ./.env /usr/src/app/frontend/.env
 
 RUN apt-get update
 RUN pwd
