@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 
 RUN mkdir -p /usr/src/app/backend
 
-ADD . /usr/src/app/backend
+COPY . /usr/src/app/backend
 
 WORKDIR /usr/src/app/backend
 RUN apt-get update
